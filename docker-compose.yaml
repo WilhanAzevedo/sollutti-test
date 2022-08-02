@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  mysql:
+    image: mysql:5.7
+    volumes:
+      - ./data/mysql:/var/lib/mysql
+    ports:
+      - "3336:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: "root"
+      MYSQL_DATABASE: "solluti"
+      MYSQL_USER: "solluti"
+      MYSQL_PASSWORD: "solluti"
+
+  
+
